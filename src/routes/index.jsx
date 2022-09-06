@@ -9,7 +9,7 @@ import Page404 from '../pages/Page404'
 export default function Routes() {
   return (
     <Switch>
-      <Route exact path="/" component={Login}></Route>
+      <Route exact path="/" component={Login} />
       {/* 
           Informando o que vai ser renderizado no nosso / 
           que n o caso é a pagina inicial 
@@ -20,7 +20,7 @@ export default function Routes() {
           então qualque endereço louco depois da / funciona
         */}
 
-      <Route path="*" component={Page404}></Route>
+      <Route path="*" component={Page404} />
       {/* qualquer rota que não exista vai para pagina 404 */}
     </Switch>
   )
